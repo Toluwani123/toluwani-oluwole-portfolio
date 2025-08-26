@@ -35,7 +35,7 @@ function Projects() {
             category: 'FinTech',
             icon: DollarSign,
             github: 'https://github.com/yourhandle/sprintbudgetpro',
-            live: 'https://github.com/Toluwani123/SprintBudget'
+            live: 'https://sprintbudgetapp.onrender.com'
         },
         {
             title: 'RateMyApartments',
@@ -45,7 +45,7 @@ function Projects() {
             category: 'Web App',
             icon: Home,
             github: 'https://github.com/Toluwani123/RateMyAparments',
-            live: 'https://example.com/ratemyapartments'
+            live: 'https://ratemyapartments-uwcj.onrender.com'
         },
     ];
 
