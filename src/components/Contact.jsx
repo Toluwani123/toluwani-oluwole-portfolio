@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../constants';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -34,9 +33,9 @@ function Contact() {
         }
 
         const payload = {
-            service_id: SERVICE_ID,
-            template_id: TEMPLATE_ID,
-            user_id: PUBLIC_KEY,
+            service_id: import.meta.env.VITE_SERVICE_ID,
+            template_id: import.meta.env.VITE_TEMPLATE_ID,
+            user_id: import.meta.env.VITE_PUBLIC_KEY,
             template_params: {
             ...formData
             }
