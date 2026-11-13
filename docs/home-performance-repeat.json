@@ -1,0 +1,29 @@
+{
+  "method": "Three sequential mobile Lighthouse navigations, default simulated throttling, same isolated Chrome process, storage reset per Lighthouse default. Earlier isolated first-process run retained in lighthouse-home.json.",
+  "runs": [
+    {
+      "run": 1,
+      "score": 100,
+      "LCP": 764.5168000000001,
+      "CLS": 0,
+      "TBT": 0,
+      "transfer": 43899
+    },
+    {
+      "run": 2,
+      "score": 100,
+      "LCP": 767.3726999999999,
+      "CLS": 0,
+      "TBT": 0,
+      "transfer": 43899
+    },
+    {
+      "run": 3,
+      "score": 100,
+      "LCP": 768.1746,
+      "CLS": 0,
+      "TBT": 0,
+      "transfer": 43899
+    }
+  ]
+}

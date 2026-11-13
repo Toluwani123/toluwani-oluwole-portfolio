@@ -1,0 +1,36 @@
+{
+  "targets": [],
+  "overflow": [],
+  "focus": [
+    {
+      "outline": "solid",
+      "width": "3px",
+      "animations": [
+        "node-pulse"
+      ]
+    },
+    {
+      "outline": "solid",
+      "width": "3px",
+      "animations": [
+        "node-pulse"
+      ]
+    },
+    {
+      "outline": "solid",
+      "width": "3px",
+      "animations": [
+        "node-pulse"
+      ]
+    },
+    {
+      "outline": "solid",
+      "width": "3px",
+      "animations": []
+    }
+  ],
+  "reducedMotion": {
+    "animations": 0,
+    "stroke": "0px"
+  }
+}

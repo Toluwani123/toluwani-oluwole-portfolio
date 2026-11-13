@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import ContactBridge from '../../components/ContactBridge.astro';
+import {projects} from '../../data/projects';
+---
+<Base title="Engineering Projects" description="Ten completed projects across full-stack applications, AI workflows, embedded audio and robotics, with architecture diagrams and clear contribution boundaries." active="work">
+  <section class="wrap page-intro"><span class="eyebrow">The work / 10 projects</span><h1>Built across<br/><span class="green-text">the boundaries.</span></h1><p class="lead narrow">Web applications, intelligent workflows and devices. Each case study explains the problem, my contribution and the system around it.</p></section>
+  <section class="wrap work-index"><div class="filter-bar"><div data-filters class="filter-buttons" role="group" aria-label="Filter projects by category" hidden>{[['all','All work'],['software','Software'],['ai','AI'],['hardware','Embedded & hardware']].map(([id,label])=><button type="button" data-filter={id} aria-pressed={id==='all'?'true':'false'}>{label}</button>)}</div><p class="eyebrow" data-result-count role="status" aria-live="polite">10 projects</p></div><div class="work-grid">{projects.map((project,index)=><ProjectCard project={project} index={index}/>)}</div></section><ContactBridge/>
+</Base>

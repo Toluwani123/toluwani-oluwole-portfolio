@@ -1,0 +1,184 @@
+{
+  "pages": [
+    {
+      "route": "/404.html",
+      "htmlGzip": 1464,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 42366
+    },
+    {
+      "route": "/about/index.html",
+      "htmlGzip": 3178,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 44080
+    },
+    {
+      "route": "/contact/index.html",
+      "htmlGzip": 1596,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 42498
+    },
+    {
+      "route": "/index.html",
+      "htmlGzip": 4390,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 45292
+    },
+    {
+      "route": "/resume/index.html",
+      "htmlGzip": 2680,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43582
+    },
+    {
+      "route": "/work/ai-software-design-generator/index.html",
+      "htmlGzip": 3094,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43996
+    },
+    {
+      "route": "/work/automated-laundry-sorter/index.html",
+      "htmlGzip": 2980,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43882
+    },
+    {
+      "route": "/work/fpga-warehouse-rover/index.html",
+      "htmlGzip": 2901,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43803
+    },
+    {
+      "route": "/work/index.html",
+      "htmlGzip": 3873,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 44775
+    },
+    {
+      "route": "/work/mangamorph-ai/index.html",
+      "htmlGzip": 2737,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43639
+    },
+    {
+      "route": "/work/ratemyapartments/index.html",
+      "htmlGzip": 2666,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43568
+    },
+    {
+      "route": "/work/recconnect/index.html",
+      "htmlGzip": 3025,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43927
+    },
+    {
+      "route": "/work/samthafs-construction/index.html",
+      "htmlGzip": 2739,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43641
+    },
+    {
+      "route": "/work/sheet-music-to-sound-reader/index.html",
+      "htmlGzip": 3247,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 44149
+    },
+    {
+      "route": "/work/sprintbudget/index.html",
+      "htmlGzip": 2917,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43819
+    },
+    {
+      "route": "/work/stm32-wav-audio-player/index.html",
+      "htmlGzip": 2964,
+      "jsGzip": 1391,
+      "cssGzip": 6789,
+      "initialBytes": 43866
+    }
+  ],
+  "contrast": [
+    {
+      "pair": "Ink/paper",
+      "ratio": 15.3,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Muted/paper",
+      "ratio": 5.97,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Green/paper",
+      "ratio": 6.77,
+      "minimum": 4.5
+    },
+    {
+      "pair": "White/green",
+      "ratio": 7.28,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Amber/paper",
+      "ratio": 6.29,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Bench text/bench",
+      "ratio": 15.73,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Amber/bench",
+      "ratio": 6.9,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Green/bench",
+      "ratio": 11.22,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Border/paper",
+      "ratio": 3.92,
+      "minimum": 3
+    },
+    {
+      "pair": "Bench muted",
+      "ratio": 11.08,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Bench diagram muted",
+      "ratio": 9.06,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Owned label/bench node",
+      "ratio": 7.67,
+      "minimum": 4.5
+    },
+    {
+      "pair": "Bench border",
+      "ratio": 3.33,
+      "minimum": 3
+    }
+  ],
+  "issues": []
+}

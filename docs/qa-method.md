@@ -1,0 +1,12 @@
+# Local QA method
+
+- Astro static preview on loopback port 4321; isolated headless Chrome 157, fresh browser context, installed system Chrome. In-app Browser was attempted first, but its execution tool failed before setup (`missing field sandboxPolicy`). No browser verification is claimed for that surface.
+- All 16 HTML pages inspected at 320, 390, 768, 1024 and 1440 CSS px. Compared document scroll width with viewport width, checked visible overhanging elements, captured representative desktop/mobile screenshots and visually inspected Home, Work and capstone.
+- axe-core scans all pages for WCAG 2 A/AA, 2.1 AA and 2.2 AA rules. This automated result is not a full accessibility certification or a screen-reader audit.
+- Actual keyboard events exercised skip link, main focus, mobile Menu open/Escape/focus return and signal-node explanation. Focus outline checked; navigation targets sized at least 44px. Menu also exercised with JavaScript disabled.
+- Filters: unique ten-card inventory; AI two cards, hardware four; shared query URL; unknown-query fallback; history Back; selected control retains focus.
+- Clipboard: actual permitted clipboard call with success text; deliberate rejected clipboard call checks textual failure. Both checks await asynchronous feedback. No mailto action was activated and no message was sent.
+- Reduced motion: zero active animations on Home, static drawn hero, hidden case progress; preference change also disables animation. No-JS contexts preserve meaningful Home/Work/About/Résumé/Contact/capstone content, all ten cards and native navigation, while enhancement-only buttons stay absent.
+- Local HTTP confirms the legacy /Resume.pdf matches the software PDF byte-for-byte and a nonexistent path returns status 404. Build-time audit resolves every internal asset/page path.
+- External HTTP and read-only browser visits are listed in JSON evidence. Landing pages only; no login, financial integration, backend action or end-to-end application workflow was tested. LinkedIn returned 999 to automated HTTP access.
+- Mobile Lighthouse: default simulated mobile throttling, isolated Chrome and localhost static server. LCP/CLS/TBT are lab metrics, not field Web Vitals. The initial concurrent run was discarded as contaminated; isolated results are retained. Repeated Home runs investigate first-process unattributed blocking rather than hiding the initial result.

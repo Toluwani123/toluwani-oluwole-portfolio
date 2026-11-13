@@ -1,0 +1,14 @@
+---
+import type { Project } from '../data/projects';
+import ProjectArt from './ProjectArt.astro';
+interface Props { project: Project; index: number }
+const {project,index} = Astro.props;
+---
+<article class="project-card" data-categories={project.categories.join(' ')}>
+  <a href={`/work/${project.slug}/`} class="card-link" aria-labelledby={`title-${project.slug}`}>
+    <ProjectArt project={project} index={index}/>
+    <div class="card-heading"><h2 id={`title-${project.slug}`}>{project.title}</h2><span aria-hidden="true">↗</span></div>
+    <p>{project.short}</p><div class="card-tags">{project.stack.slice(0,3).join(' / ')}</div>
+    <div class="card-bottom"><span>{project.date && `${project.date} · `}{project.status}</span><span class="card-rule" aria-hidden="true"></span></div>
+  </a>
+</article>

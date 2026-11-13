@@ -1,0 +1,20 @@
+[
+  {
+    "source": "NewFnlSwe_SureAttend_v2 (1).pdf",
+    "copy": "public/resumes/toluwani-oluwole-software.pdf",
+    "identical": true,
+    "sha256": "c222de529d84941537c2fa47d013307f6b4adb1702e1ed5b55e874064b8efd20"
+  },
+  {
+    "source": "NewFnlEmbedded_SureAttend_v2 (1).pdf",
+    "copy": "public/resumes/toluwani-oluwole-embedded.pdf",
+    "identical": true,
+    "sha256": "1dfa01979229953572e320cafae34bc644583d60732ea4576dd62a65b2bf6af9"
+  },
+  {
+    "source": "Newfnlhybrid_SureAttend_v2 (1).pdf",
+    "copy": "public/resumes/toluwani-oluwole-hybrid.pdf",
+    "identical": true,
+    "sha256": "143d5ab8bc935bd4933320babbac845942db24d13c5d40f4c29aec75cea87bef"
+  }
+]

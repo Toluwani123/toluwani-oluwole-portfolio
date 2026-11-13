@@ -1,0 +1,9 @@
+<div class="signal-hero" aria-label="Signal path: sensor to firmware to API to interface">
+  <div class="signal-track">
+    <svg viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true"><path class="hero-trace" pathLength="1" d="M125 28H200Q225 28 225 52V60Q225 78 250 78H300Q325 78 325 52V28H375H500V66H560V28H625H700Q725 28 725 50V60Q725 78 750 78H800Q825 78 825 52V28H875"/></svg>
+    {[
+      ['sensor', '01', 'Sensor', 'Observe the input'], ['firmware', '02', 'Firmware', 'Validate & schedule'], ['api', '03', 'API', 'Keep the contract'], ['interface', '04', 'Interface', 'Make state clear']
+    ].map(([id,n,label,description],i) => <div class="signal-stop" style={`--node-delay:${i*120}ms`}><a href={`#signal-${id}`} class={`signal-node node-${i}`} aria-label={`${label}: ${description}`}><span aria-hidden="true">{n}</span></a><span class="signal-label">{label}</span><span class="signal-description">{description}</span></div>)}
+  </div>
+  <details class="signal-explanation"><summary>One idea across the stack: predictable interfaces <span aria-hidden="true">+</span></summary><div class="signal-notes"><p id="signal-sensor"><strong>Sensor.</strong> Know what arrived and what can go wrong.</p><p id="signal-firmware"><strong>Firmware.</strong> Validate inputs and respect timing.</p><p id="signal-api"><strong>API.</strong> Define what crosses the boundary.</p><p id="signal-interface"><strong>Interface.</strong> Show the state a person can act on.</p></div></details>
+</div>

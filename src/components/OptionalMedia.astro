@@ -1,0 +1,8 @@
+---
+import type { Project } from '../data/projects';
+interface Props { project: Project }
+const {project} = Astro.props;
+---
+{project.photo && <figure class="annotated-photo"><div class="photo-stage"><img src={project.photo.src} alt={project.photo.alt} width={project.photo.width} height={project.photo.height} loading="lazy"/>{project.photo.hotspots?.map((h,i)=><a class="hotspot" style={`--x:${h.x}%;--y:${h.y}%`} href={`#hotspot-${i}`} aria-label={`${i+1}. ${h.owner}: ${h.label}`}>{i+1}</a>)}</div><figcaption>{project.photo.caption}</figcaption>{project.photo.hotspots && <ol class="hotspot-notes">{project.photo.hotspots.map((h,i)=><li id={`hotspot-${i}`} tabindex="-1"><strong>{h.owner}: {h.label}.</strong> {h.text}</li>)}</ol>}</figure>}
+{project.audio && <figure class="audio-sample"><audio controls preload="none" aria-label={project.audio.caption} data-audio><source src={project.audio.src}/><a href={project.audio.src}>Open audio file</a></audio><button type="button" data-audio-toggle hidden aria-pressed="false">Play audio sample</button><p class="audio-feedback" role="status"></p><figcaption>{project.audio.caption}</figcaption><p>{project.audio.transcript}</p></figure>}
+{project.video && <figure><video controls preload="none" poster={project.video.poster} aria-label={project.video.caption}><source src={project.video.src}/>{project.video.captions && <track kind="captions" src={project.video.captions} srclang="en" label="English" default/>}<a href={project.video.src}>Open video</a></video><figcaption>{project.video.caption}</figcaption><p>{project.video.transcript}</p></figure>}

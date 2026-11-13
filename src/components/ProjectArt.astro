@@ -1,0 +1,23 @@
+---
+import type { Project } from '../data/projects';
+interface Props { project: Project; index: number; dark?: boolean }
+const { project, index, dark = false } = Astro.props;
+const traces = [
+'M60 140H170V70H300V140H430V210H540',
+'M60 180H150V100H270V180H390V100H540',
+'M60 140H180V70H310V140H430V210H180V140 M430 140H540',
+'M60 140H160V70H290V140H400V70H500 M160 140V210H290V140 M400 140H540',
+'M60 70H160V140H290V70H420V140H540 M60 210H160V140',
+'M60 70H150V140H290V210H410V140H540 M60 210H150V140',
+'M60 140H180V60H320V140H430V70H540 M430 140V210H540',
+'M60 140H170V210H290V70H410V140H540',
+'M60 140H150V70H300V140H450V210H540 M150 140V210H300V140',
+'M60 210H160V140H280V70H410V140H540 M280 140V210H410V140'
+];
+const geometry = [[140,210,300,140],[180,100,270,180],[140,140,310,140],[140,140,290,140],[70,140,290,70],[70,140,290,210],[140,70,320,140],[140,140,290,70],[140,210,300,140],[210,140,280,70]][index % 10];
+---
+<div class:list={['project-art', { 'art-dark': dark }]} style={`--cover:${project.color}`}>
+  <div class="art-meta"><span>{String(index+1).padStart(2,'0')} / {project.categories.includes('hardware') ? 'EMBEDDED SYSTEMS' : project.categories.includes('ai') ? 'AI WORKFLOWS' : 'SOFTWARE SYSTEMS'}</span><span aria-hidden="true">↗</span></div>
+  <svg class="mini-path" viewBox="0 0 600 280" aria-hidden="true" fill="none"><path class="trace-base" d={traces[index % 10]}/><path class="trace-active" pathLength="1" d={traces[index % 10]}/><circle cx="60" cy={geometry[0]} r="14"/><rect x={geometry[2]-13} y={geometry[3]-13} width="26" height="26" rx="3"/><circle class="output-node" cx="540" cy={geometry[1]} r="14"/></svg>
+  <div class="art-flow" aria-hidden="true">{project.flow.slice(0,4).map((node,i)=><><span>{node.label}</span>{i < Math.min(project.flow.length,4)-1 && <span class="flow-dot">/</span>}</>)}</div>
+</div>

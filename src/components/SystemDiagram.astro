@@ -1,0 +1,10 @@
+---
+import type { Project } from '../data/projects';
+interface Props { project: Project }
+const {project} = Astro.props;
+---
+<figure class:list={['system-diagram', {'bench-diagram': project.categories.includes('hardware')}]}>
+  <div class="diagram-caption-top"><span class="eyebrow">System / signal path</span><span class="ownership-key"><i aria-hidden="true"></i> Green + label = my work</span></div>
+  <ol class="system-flow">{project.flow.map((node,i)=><li><div class:list={['system-node',{owned:node.mine}]}><span class="node-number">{String(i+1).padStart(2,'0')}</span><strong>{node.label}</strong><small>{node.mine?'My work':'System context'}</small></div>{i < project.flow.length - 1 && <svg class="flow-arrow" viewBox="0 0 40 16" aria-hidden="true"><path d="M0 8H36M30 2L36 8L30 14"/></svg>}</li>)}</ol>
+  <figcaption>{project.flowText}</figcaption>
+</figure>

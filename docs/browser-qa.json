@@ -1,0 +1,219 @@
+{
+  "browser": "157.0.8103.78",
+  "overflow": [],
+  "axe": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/work/",
+      "violations": []
+    },
+    {
+      "route": "/about/",
+      "violations": []
+    },
+    {
+      "route": "/resume/",
+      "violations": []
+    },
+    {
+      "route": "/contact/",
+      "violations": []
+    },
+    {
+      "route": "/404.html",
+      "violations": []
+    },
+    {
+      "route": "/work/recconnect/",
+      "violations": []
+    },
+    {
+      "route": "/work/sheet-music-to-sound-reader/",
+      "violations": []
+    },
+    {
+      "route": "/work/ai-software-design-generator/",
+      "violations": []
+    },
+    {
+      "route": "/work/stm32-wav-audio-player/",
+      "violations": []
+    },
+    {
+      "route": "/work/sprintbudget/",
+      "violations": []
+    },
+    {
+      "route": "/work/automated-laundry-sorter/",
+      "violations": []
+    },
+    {
+      "route": "/work/fpga-warehouse-rover/",
+      "violations": []
+    },
+    {
+      "route": "/work/mangamorph-ai/",
+      "violations": []
+    },
+    {
+      "route": "/work/samthafs-construction/",
+      "violations": []
+    },
+    {
+      "route": "/work/ratemyapartments/",
+      "violations": []
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Ten distinct project cards",
+      "pass": true
+    },
+    {
+      "name": "AI filter: two projects + query",
+      "pass": true
+    },
+    {
+      "name": "Filter retains focus",
+      "pass": true
+    },
+    {
+      "name": "Hardware filter: four projects",
+      "pass": true
+    },
+    {
+      "name": "Browser Back restores AI",
+      "pass": true
+    },
+    {
+      "name": "Shared filter query",
+      "pass": true
+    },
+    {
+      "name": "Unknown filter falls back to all",
+      "pass": true
+    },
+    {
+      "name": "Copy email success feedback",
+      "pass": true
+    },
+    {
+      "name": "Copy email failure feedback",
+      "pass": true
+    },
+    {
+      "name": "First keyboard target is skip link",
+      "pass": true
+    },
+    {
+      "name": "Skip link focuses main",
+      "pass": true
+    },
+    {
+      "name": "Keyboard opens mobile nav",
+      "pass": true
+    },
+    {
+      "name": "Escape closes nav and returns focus",
+      "pass": true
+    },
+    {
+      "name": "Visible keyboard focus style",
+      "pass": true,
+      "detail": "solid"
+    },
+    {
+      "name": "Signal node reveals text equivalent",
+      "pass": true
+    },
+    {
+      "name": "No-JS mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "Case contents tracks scroll",
+      "pass": true
+    },
+    {
+      "name": "Legacy Resume.pdf identical to software PDF",
+      "pass": true
+    },
+    {
+      "name": "Missing URL returns 404",
+      "pass": true
+    }
+  ],
+  "noJs": [
+    {
+      "route": "/",
+      "h1": "Software engineer.\nSystems perspective.",
+      "bodyVisible": true,
+      "cards": 0,
+      "copyAbsent": true,
+      "filtersAbsent": true
+    },
+    {
+      "route": "/work/?type=ai",
+      "h1": "Built across\nthe boundaries.",
+      "bodyVisible": true,
+      "cards": 10,
+      "copyAbsent": true,
+      "filtersAbsent": true
+    },
+    {
+      "route": "/about/",
+      "h1": "I’m Tolu.\nI follow the signal.",
+      "bodyVisible": true,
+      "cards": 0,
+      "copyAbsent": true,
+      "filtersAbsent": true
+    },
+    {
+      "route": "/resume/",
+      "h1": "Experience,\non paper.",
+      "bodyVisible": true,
+      "cards": 0,
+      "copyAbsent": true,
+      "filtersAbsent": true
+    },
+    {
+      "route": "/contact/",
+      "h1": "Let’s talk\nabout the work.",
+      "bodyVisible": true,
+      "cards": 0,
+      "copyAbsent": true,
+      "filtersAbsent": true
+    },
+    {
+      "route": "/work/sheet-music-to-sound-reader/",
+      "h1": "Sheet Music to Sound Reader",
+      "bodyVisible": true,
+      "cards": 0,
+      "copyAbsent": true,
+      "filtersAbsent": true
+    }
+  ],
+  "motion": [
+    {
+      "page": "Home",
+      "preference": true,
+      "animations": 0,
+      "drawn": "0px",
+      "enhanced": false
+    },
+    {
+      "page": "Case study",
+      "animations": 0,
+      "progressVisible": false
+    },
+    {
+      "page": "Changed preference",
+      "animations": 0
+    }
+  ],
+  "externalDemos": [],
+  "errors": []
+}
