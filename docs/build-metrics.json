@@ -9,10 +9,10 @@
     },
     {
       "route": "/about/index.html",
-      "htmlGzip": 3178,
+      "htmlGzip": 3275,
       "jsGzip": 1391,
       "cssGzip": 6789,
-      "initialBytes": 44080
+      "initialBytes": 66629
     },
     {
       "route": "/contact/index.html",

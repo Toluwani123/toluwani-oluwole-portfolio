@@ -17,6 +17,7 @@ This specification defines the authorized Astro + TypeScript static rebuild. The
 | E | [Embedded résumé](<newestresumes/NewFnlEmbedded_SureAttend_v2 (1).pdf>) | All text on its one page, plus embedded hyperlinks |
 | S | [Software résumé](<newestresumes/NewFnlSwe_SureAttend_v2 (1).pdf>) | All text on its one page, plus embedded hyperlinks |
 | H | [Hybrid résumé](<newestresumes/Newfnlhybrid_SureAttend_v2 (1).pdf>) | All text on its one page, plus embedded hyperlinks |
+| P | [Supplied headshot](newestresumes/IMG_4429.JPG) | JPEG identified by file type; source 1800×1800, optimized to 480×600 WebP for About |
 | C | [Existing portfolio](toluwani-oluwole-portfolio/) | All application components, entry points, styles, configuration, README, dependency manifests, and asset inventory |
 | O-PDF | [Existing downloadable résumé](toluwani-oluwole-portfolio/public/Resume.pdf) | Entire one-page document |
 | O-DOCX | [Existing Word résumé](<toluwani-oluwole-portfolio/public/Main Resume.docx>) | Entire document text, footer, and external hyperlink relationships |
@@ -321,7 +322,7 @@ Use whitespace/rules, nearly square media fields (4–8px radius), no resting sh
 
 ### 5.5 Images and media
 
-About portrait: locate image by file type in newestresumes; optimize to WebP/AVIF, reserve 240×300 (4:5) desktop, stack on mobile; useful alt text. Initial inventory found no image file, so request the actual file and do not fabricate a portrait.
+About portrait: locate image by file type in newestresumes; optimize to WebP/AVIF, reserve 240×300 (4:5) desktop, stack on mobile; useful alt text. Supplied image: `newestresumes/IMG_4429.JPG`, identified as JPEG by file type; use its optimized 480×600 WebP at 240×300 CSS pixels.
 
 Hardware has no photo/video at build time: use accurate block diagrams, documented specs and test narratives. RecConnect has no screenshots and remains an internal-platform description. AI generator has no sample output: capabilities plus workflow only.
 
@@ -378,7 +379,7 @@ Photo/hotspot, audio and video figures appear only for supplied data. In this bu
 
 ### 6.5 About
 
-Intro and engineering context beside the supplied 240×300 headshot on desktop, stacked on mobile. If the requested image is still absent, render the introduction without a portrait block and record the missing input in the handoff. Follow with the six-role confirmed chronology (IT Help Central compact here only), education/minors/GPA, and concrete working-approach examples linked to project evidence. Do not publish unconfirmed mentorship outcomes or honors.
+Intro and engineering context beside the supplied 240×300 headshot on desktop, stacked on mobile. The supplied JPEG is included as the About portrait, with alt text. Follow with the six-role confirmed chronology (IT Help Central compact here only), education/minors/GPA, and concrete working-approach examples linked to project evidence. Do not publish unconfirmed mentorship outcomes or honors.
 
 ### 6.6 Résumé
 
@@ -569,7 +570,7 @@ Remaining unknowns are handled by omission or bounded copy: no Samthafs current-
 
 ### 10.4 Assets and delivery risks
 
-The required About headshot was absent from the initial file inventory. Ask for the actual image, continue independent work, and report it if still absent. Never use a generated face, stock portrait or initials avatar. The three newest PDFs remain unedited even where their claims disagree with confirmed facts.
+The supplied About headshot (`newestresumes/IMG_4429.JPG`) is now included as an optimized 4:5 WebP. Never substitute a generated face, stock portrait or initials avatar. The three newest PDFs remain unedited even where their claims disagree with confirmed facts.
 
 Optional project photo/audio/video/repo/demo fields render only when populated. Confidentiality, stale “Present” dates, unsupported claims and mistaking diagrams for original artifacts remain risks. Caption diagrams as architecture explanations; no fabricated proof. Check external links within environment limits and record actual responses, without claiming more verification than performed.
 
@@ -613,4 +614,4 @@ Run the appropriate build/type/content checks. Exercise keyboard navigation, dis
 
 Record actual build/type/content/link checks, gzip/transfer measurements, any unavailable browser checks, inferred content and résumé discrepancies. Document Render settings and old-link behavior. Supply the local branch/copy and instructions for the user to commit/push. Do not publish, push, change DNS, or touch the existing Render service.
 
-**Exit:** build and review artifacts are local and ready for the user; no deployment is claimed. Missing headshot, environment access failures and unverified live/browser behavior remain explicit.
+**Exit:** build and review artifacts are local and ready for the user; no deployment is claimed. Environment access failures and unverified live/browser behavior remain explicit.

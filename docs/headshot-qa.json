@@ -1,0 +1,84 @@
+{
+  "file": "newestresumes/IMG_4429.JPG",
+  "output": "public/media/headshot.webp",
+  "bytes": 22452,
+  "results": [
+    {
+      "viewport": 320,
+      "scrollWidth": 320,
+      "loaded": true,
+      "alt": "Portrait of Toluwani Oluwole",
+      "natural": [
+        480,
+        600
+      ],
+      "display": [
+        240,
+        300
+      ],
+      "belowIntro": true
+    },
+    {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "loaded": true,
+      "alt": "Portrait of Toluwani Oluwole",
+      "natural": [
+        480,
+        600
+      ],
+      "display": [
+        240,
+        300
+      ],
+      "belowIntro": true,
+      "violations": []
+    },
+    {
+      "viewport": 768,
+      "scrollWidth": 768,
+      "loaded": true,
+      "alt": "Portrait of Toluwani Oluwole",
+      "natural": [
+        480,
+        600
+      ],
+      "display": [
+        240,
+        300
+      ],
+      "belowIntro": false
+    },
+    {
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "loaded": true,
+      "alt": "Portrait of Toluwani Oluwole",
+      "natural": [
+        480,
+        600
+      ],
+      "display": [
+        240,
+        300
+      ],
+      "belowIntro": false
+    },
+    {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "loaded": true,
+      "alt": "Portrait of Toluwani Oluwole",
+      "natural": [
+        480,
+        600
+      ],
+      "display": [
+        240,
+        300
+      ],
+      "belowIntro": false,
+      "violations": []
+    }
+  ]
+}

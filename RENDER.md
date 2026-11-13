@@ -47,4 +47,4 @@ References: [Render Astro static settings](https://render.com/docs/deploy-astro)
 
 Review this copy's `build/signal-path-portfolio` branch, commit the source and `package-lock.json`, and push it yourself. Exclude `node_modules`, `dist`, `.astro` and local environment files. The original checkout at `../toluwani-oluwole-portfolio` remains unchanged. This copy retains the same `origin` URL and repository history; use the copy as the checkout from which you commit/push. The completed local source is committed on the build branch for your review. No push has been made.
 
-Before publishing, correct the source résumé PDFs if desired and add the actual headshot. See `BUILD-REPORT.md` for verification and exact remaining limitations. To change the domain, update `astro.config.mjs`, `src/pages/sitemap.xml.ts` and `public/robots.txt` together.
+Before publishing, correct the source résumé PDFs if desired. The supplied headshot is included. See `BUILD-REPORT.md` for verification and exact remaining limitations. To change the domain, update `astro.config.mjs`, `src/pages/sitemap.xml.ts` and `public/robots.txt` together.

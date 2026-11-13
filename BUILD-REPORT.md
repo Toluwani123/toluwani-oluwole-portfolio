@@ -10,7 +10,7 @@ Work filtering supports shared query URLs and browser Back; all ten cards remain
 
 Three newest PDFs were copied unchanged under clean names. `/Resume.pdf` is byte-identical to the software résumé. Legacy Home anchors remain.
 
-**Missing input:** no headshot image exists in `newestresumes/`; file-type inspection found only three PDFs and the master Markdown. About omits the portrait block. The 240×300 layout and 480×600 WebP preparation are implemented; adding the actual image to the source folder and rebuilding will include it. This is the only requested asset not delivered.
+**About portrait included:** `newestresumes/IMG_4429.JPG` is optimized to a 22,452-byte, 480×600 WebP, displayed at 240×300 with alt text. It stacks below the introduction on mobile. The follow-up image verification is recorded in [headshot QA](docs/headshot-qa.json); the original JPEG is unchanged.
 
 ## Measured verification
 
@@ -27,7 +27,7 @@ Three newest PDFs were copied unchanged under clean names. `/Resume.pdf` is byte
 | JavaScript | 1,391 bytes gzip (1.36 KiB) per first load |
 | CSS | 6,789 bytes gzip (6.63 KiB) |
 | Largest HTML | 4,390 bytes gzip (4.29 KiB) |
-| Conservative initial asset budget | At most 45,292 bytes (44.23 KiB), including font/favicon/touch icon; PDF/social downloads excluded |
+| Conservative initial asset budget | At most 66,629 bytes (65.07 KiB), including About portrait/font/favicon/touch icon; PDF/social downloads excluded |
 | Lighthouse observed transfer | Home 43,899 bytes; capstone 42,754 bytes |
 | Mobile Lighthouse, three sequential Home runs | 100 / 100 / 100 performance; median LCP 0.767s, CLS 0, TBT 0ms |
 | Mobile Lighthouse, capstone | 100 performance, LCP 0.761s, CLS 0, TBT 6ms |
@@ -87,4 +87,4 @@ The old Word document is not a copied résumé PDF and is not republished. Old/s
 
 Use the existing **Render Static Site**, build **`npm ci && npm run build`**, publish **`dist`**. No server adapter/start command. [RENDER.md](RENDER.md) documents the physical `/Resume.pdf` alias, optional 301 rules, old-anchor behavior and removing an obsolete SPA rewrite. Fragments never reach Render; old `/#about`, `/#skills`, `/#projects`, `/#contact` work via retained HTML IDs.
 
-The source is committed locally on `build/signal-path-portfolio`. Review and push this branch from this copy yourself when ready. Supply the missing headshot and update the source PDFs if you want their contents corrected before launch. Keep `node_modules`, `dist`, `.astro` and environment files out of Git. The local preview used for QA was stopped after verification.
+The source is committed locally on `build/signal-path-portfolio`. Review and push this branch from this copy yourself when ready. Update the source PDFs if you want their contents corrected before launch. Keep `node_modules`, `dist`, `.astro` and environment files out of Git. The local preview used for QA was stopped after verification.
