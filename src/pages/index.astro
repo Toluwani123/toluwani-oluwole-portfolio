@@ -6,8 +6,8 @@ import ContactBridge from '../components/ContactBridge.astro';
 import {projects} from '../data/projects';
 import {experience} from '../data/experience';
 ---
-<Base title="Software Engineer" description="I'm Toluwani Oluwole, a software engineer in Dallas connecting full-stack products, AI infrastructure and embedded systems. Texas Tech, December 2026.">
-  <section class="hero wrap"><div class="hero-topline eyebrow"><span>Dallas, Texas / Texas Tech University</span><span>Expected graduation · Dec 2026</span></div><h1>Software engineer.<br/><span>Systems perspective.</span></h1><div class="hero-bottom"><p class="lead">I’m Tolu. I build across web products, AI infrastructure and embedded systems—with attention to what happens at the boundaries.</p><div class="hero-actions"><a class="button" href="/work/">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="/resume/">View résumé <span aria-hidden="true">↗</span></a></div></div><SignalHero/></section>
+<Base title="Computer Engineer" description="I'm Toluwani Oluwole, a computer engineer in Dallas connecting full-stack products, AI infrastructure and embedded systems. Texas Tech, December 2026.">
+  <section class="hero wrap"><div class="hero-topline eyebrow"><span>Dallas, Texas / Texas Tech University</span><span>Expected graduation · Dec 2026</span></div><h1><span class="hero-role">Computer engineer.</span><br/><span>Systems perspective.</span></h1><div class="hero-bottom"><p class="lead">I’m Tolu. I build across web products, AI infrastructure and embedded systems—with attention to what happens at the boundaries.</p><div class="hero-actions"><a class="button" href="/work/">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="/resume/">View résumé <span aria-hidden="true">↗</span></a></div></div><SignalHero/></section>
   <section id="projects" class="selected-work section"><div class="wrap section-heading"><span class="eyebrow">01 / Selected work</span><div><h2>Different systems.<br/>The same attention to detail.</h2><p>Three projects, from a campus check-in to a microcontroller’s audio output.</p></div><a class="text-link" href="/work/">All 10 projects ↗</a></div>
     {projects.slice(0,3).map((project,index)=><article class:list={['feature',{'bench':index===1}]} data-reveal><div class="wrap feature-inner"><a class="feature-art-link" href={`/work/${project.slug}/`} aria-label={`Read ${project.title} case study`}><ProjectArt project={project} index={index} dark={index===1}/></a><div class="feature-copy"><div class="eyebrow">{String(index+1).padStart(2,'0')} / {project.discipline}</div><h3><a href={`/work/${project.slug}/`}>{project.title}</a></h3><p>{project.summary}</p><p class="feature-ownership"><strong>My focus</strong><br/>{project.role}</p><div class="tag-line">{project.stack.slice(0,3).join(' / ')}</div><a class="text-link" href={`/work/${project.slug}/`}>Read the case study <span aria-hidden="true">↗</span></a></div></div></article>)}
   </section>
@@ -16,3 +16,16 @@ import {experience} from '../data/experience';
   <section id="about" class="section about-bridge wrap" data-reveal><span class="eyebrow">04 / A little context</span><div><h2>A software-first approach.<br/>An engineering foundation.</h2><p class="lead">I’m completing my B.S. in Computer Engineering at Texas Tech University, with minors in Computer Science and Mathematics. Expected December 2026.</p><p>Working across applications and devices has made me attentive to contracts, state and the small assumptions that become difficult bugs.</p><a class="text-link" href="/about/">More about me ↗</a></div></section>
   <ContactBridge/>
 </Base>
+
+<style>
+  .hero h1 > .hero-role {
+    color: var(--ink);
+    font-size: clamp(64px, 10.9vw, 150px);
+  }
+
+  @media (min-width: 768px) {
+    .hero h1 > .hero-role {
+      white-space: nowrap;
+    }
+  }
+</style>
